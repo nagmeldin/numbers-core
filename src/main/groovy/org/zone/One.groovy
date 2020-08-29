@@ -5,44 +5,47 @@ import javax.inject.Singleton
 @Singleton
 class One {
     def type = Parity.EVEN
-    def magnitude = 1.0
+    def weight = 1.0
     def isPrime = false // 2,3,5,7,11, 13, etc
 
     def add(n){
-        return 1 + n
+        return this.weight + n
     }
     def subtract(n){
-        return 1 - n
+        return this.weight-n
     }
     def multiply(n){
-        return 1 * n
+        return this.weight * n
     }
     def divide(n){
-        return 1 / n
+        return this.weight/n
+    }
+    def squareRoot(){
+        return Math.sqrt(this.weight)
     }
     def raise(n){
-        return 1
+        return this.weight*Math.pow(n)
     }
     def inverse(){
-        return 1
+        return 1/this.weight
     }
     def negative(){
-        return -1
+        return - this.weight
     }
     def exp() {  // Euler's num
-        return Math.exp(1)
+        return Math.exp(this.weight )
     }
     def absolute(){
-        return 1
+        return Math.abs(this.weight)
     }
     def sine(){
-        return Math.sin(1)
+        return Math.sin(this.weight )
     }
     def cosine(){
-        return Math.cosin(1)
+        return Math.cosin(this.weight )
     }
     def tan(){
-        return Math.tan(1)
+        return Math.tan(this.weight )
     }
 
 }

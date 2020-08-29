@@ -3,34 +3,34 @@ package org.zone
 import javax.inject.Singleton
 
 @Singleton
-class Zero {
-    def type = Parity.EVEN
-    def weight = 0.0
+class Nine {
+    def type = Parity.ODD
+    def weight = 9.0
     def isPrime = false // 2,3,5,7,11, 13, etc
 
     def add(n){
-        return n
+        return this.weight + n
     }
     def subtract(n){
-        return n
+        return this.weight-n
     }
     def multiply(n){
         return this.weight * n
     }
     def divide(n){
-        return Double.POSITIVE_INFINITY
+        return this.weight/n
     }
     def squareRoot(){
-        return this.weight
+        return Math.sqrt(this.weight)
     }
     def raise(n){
-        return 1
+        return this.weight*Math.pow(n)
     }
     def inverse(){
-        return Double.POSITIVE_INFINITY
+        return 1/this.weight
     }
     def negative(){
-        return this.weight
+        return - this.weight
     }
     def exp() {  // Euler's num
         return Math.exp(this.weight )
@@ -39,12 +39,13 @@ class Zero {
         return Math.abs(this.weight)
     }
     def sine(){
-        return this.weight
+        return Math.sin(this.weight )
     }
     def cosine(){
-        return Math.PI/2
+        return Math.cosin(this.weight )
     }
     def tan(){
-        return this.weight
+        return Math.tan(this.weight )
     }
+
 }
