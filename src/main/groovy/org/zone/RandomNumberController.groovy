@@ -28,9 +28,10 @@ class RandomNumberController {
     def getCertainSum(number) {
         return randomNumberService.sum(number)
     }
+
     @Get("/singledigit/{number}")
     def getNumber(number) {
-         return randomNumberService.getSingleDigit(number)
+          return randomNumberService.getSingleDigit(number)
     }
 
 }

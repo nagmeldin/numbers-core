@@ -5,6 +5,17 @@ import javax.inject.Singleton
 @Singleton
 class RandomNumberService {
 
+    def zeroInstance = new Zero()
+    def oneInstance = new One()
+    def twoInstance = new Two()
+    def threeInstance = new Three()
+    def fourInstance = new Four()
+    def fiveInstance = new Five()
+    def sixInstance = new Six()
+    def sevenInstance = new Seven()
+    def eightInstance = new Eight()
+    def nineInstance = new Nine()
+
    def sum(){
        def random = new Random().nextInt(1000)
 
@@ -26,30 +37,30 @@ class RandomNumberService {
     }
 
     def getSingleDigit(number){
-
+        def result
         switch (number){
-               case zero:   def result = new Zero().weight
+               case 'zero':   result = this.zeroInstance.weight
                             break
-               case one:    def result = new One().weight
+               case 'one':    result = this.oneInstance.weight
                             break
-               case two:    def result = new Two().weight
+               case 'two':    result = this.twoInstance.weight
                             break
-               case three:  def result = new Three().weight
+               case 'three':  result = this.threeInstance.weight
                             break
-               case four:   def result = new Four().weight
+               case 'four':   result = this.fourInstance.weight
                             break
-               case five:   def result = new Five().weight
+               case 'five':   result = this.fiveInstance.weight
                             break
-               case six:    def result = new Six().weight
+               case 'six':    result = this.sixInstance.weight
                             break
-               case seven:  def result = new Seven().weight
+               case 'seven':  result = this.sevenInstance.weight
                             break
-               case eight:  def result = new Eight().weight
+               case 'eight':  result = this.eightInstance.weight
                             break
-               case nine:   def result = new Nine().weight
+               case 'nine':   result = this.nineInstance.weight
                             break
-               default:     def result = 'unknow'
-         }
+               default:     result = -1
+          }
           return result
     }
 }

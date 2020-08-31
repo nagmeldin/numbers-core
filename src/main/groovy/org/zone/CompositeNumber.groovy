@@ -62,6 +62,4 @@ class CompositeNumber {
     def tan(){
         return Math.tan(this.weight)
     }
-
-
 }
