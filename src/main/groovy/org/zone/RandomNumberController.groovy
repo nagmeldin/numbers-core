@@ -16,7 +16,10 @@ class RandomNumberController {
     def index() {
         "Welcome to random numbers!"
     }
-
+    @Get(uri="/ver")
+    def getVersion() {
+         return 1.0
+    }
     @Get("/sum")
     def getRadomSum() {
         return randomNumberService.sum()
@@ -25,4 +28,9 @@ class RandomNumberController {
     def getCertainSum(number) {
         return randomNumberService.sum(number)
     }
+    @Get("/singledigit/{number}")
+    def getNumber(number) {
+         return randomNumberService.getSingleDigit(number)
+    }
+
 }

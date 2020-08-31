@@ -5,7 +5,7 @@ import javax.inject.Singleton
 @Singleton
 class CompositeNumber {
 
-    def nums =[]
+    def nums =[ new Nine(), new Eight(), new Seven(), new Six(), new Five(), new Four(), new Three(), new Two(), new One(), new Zero() ]
     def type
     def isPrime
     def weight
@@ -15,7 +15,7 @@ class CompositeNumber {
          this.nums = nums
          sum = 0
         nums.eachWithIndex { num, index ->
-            if ( num instanceof Nine ||num instanceof Eight || num instanceof Seven ||num instanceof Six num instanceof Five ||num instanceof Four || num instanceof Three ||num instanceof Two || num instanceof One ||num instanceof Zero){
+            if ( num instanceof Nine ||num instanceof Eight || num instanceof Seven ||num instanceof Six || num instanceof Five ||num instanceof Four || num instanceof Three ||num instanceof Two || num instanceof One ||num instanceof Zero){
                 sum = sum + 10.Math.pow(index) * num.weight
             }
             this.weight = sum
