@@ -34,4 +34,12 @@ class RandomNumberController {
           return randomNumberService.getSingleDigit(number)
     }
 
+    @Get("/singledigit/{number}/{op}")
+    def doSingleDigitNumber(number,op) {
+        return randomNumberService.operateSingleDigit(number,op)
+    }
+    @Get("/singledigit/{number}/{op}/{n}")
+    def doSingleDigitNumberPlus(number,op,n) {
+        return randomNumberService.operateSingleDigitPlus(number,op,n)
+    }
 }

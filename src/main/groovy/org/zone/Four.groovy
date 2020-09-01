@@ -24,7 +24,7 @@ class Four {
         return Math.sqrt(this.weight)
     }
     def raise(n){
-        return this.weight*Math.pow(n)
+        return Math.pow(this.weight,n)
     }
     def inverse(){
         return 1/this.weight

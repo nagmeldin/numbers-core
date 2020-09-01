@@ -63,4 +63,98 @@ class RandomNumberService {
           }
           return result
     }
+
+
+    def operateSingleDigit(number,op){
+        def single
+        def result
+        switch (number){
+            case 'zero':  single = this.zeroInstance
+                break
+            case 'one':   single = this.oneInstance
+                break
+            case 'two':   single = this.twoInstance
+                break
+            case 'three': single = this.threeInstance
+                break
+            case 'four':  single = this.fourInstance
+                break
+            case 'five':  single = this.fiveInstance
+                break
+            case 'six':   single = this.sixInstance
+                break
+            case 'seven': single = this.sevenInstance
+                break
+            case 'eight': single = this.eightInstance
+                break
+            case 'nine':  single = this.nineInstance
+                break
+            default:  single = null
+        }
+        switch (op){
+            case 'squareroot': result = single?.squareRoot() //safe operator
+                break
+            case 'inverse':    result = single?.inverse()
+                break
+            case 'negative':   result = single?.negative()
+                break
+            case 'exp':        result = single?.exp()
+                break
+            case 'absolute':   result = single?.absolute()
+                break
+            case 'sine':       result = single?.sine()
+                break
+            case 'cosine':     result = single?.cosine()
+                break
+            case 'tan':        result = single?.tan()
+                break
+            default:     result = -999999
+        }
+        return result
+    }
+
+
+    def operateSingleDigitPlus(number,op,n){
+        def nInt = n.toInteger()
+        def single
+        def result
+        switch (number){
+            case 'zero':  single = this.zeroInstance
+                break
+            case 'one':   single = this.oneInstance
+                break
+            case 'two':   single = this.twoInstance
+                break
+            case 'three': single = this.threeInstance
+                break
+            case 'four':  single = this.fourInstance
+                break
+            case 'five':  single = this.fiveInstance
+                break
+            case 'six':   single = this.sixInstance
+                break
+            case 'seven': single = this.sevenInstance
+                break
+            case 'eight': single = this.eightInstance
+                break
+            case 'nine':  single = this.nineInstance
+                break
+            default:  single = null
+        }
+        switch (op){
+            case 'add':      result = single?.add(nInt)
+                break
+            case 'subtract': result = single?.subtract(nInt)
+                break
+            case 'multiply': result = single?.multiply(nInt)
+                break
+            case 'divide':   result = single?.divide(nInt)
+                break
+            case 'raise':    result = single?.raise(nInt)
+                break
+            default:     result = -999999
+        }
+        return result
+    }
+
 }
