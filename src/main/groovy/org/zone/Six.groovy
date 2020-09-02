@@ -30,7 +30,7 @@ class Six {
         return 1/this.weight
     }
     def negative(){
-        return - this.weight
+        return -this.weight
     }
     def exp() {  // Euler's num
         return Math.exp(this.weight )

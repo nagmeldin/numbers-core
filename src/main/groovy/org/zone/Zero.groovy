@@ -24,7 +24,7 @@ class Zero {
         return this.weight
     }
     def raise(n){
-        return 1
+        return 0
     }
     def inverse(){
         return Double.POSITIVE_INFINITY

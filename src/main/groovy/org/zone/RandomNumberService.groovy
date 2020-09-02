@@ -39,27 +39,27 @@ class RandomNumberService {
     def getSingleDigit(number){
         def result
         switch (number){
-               case 'zero':   result = this.zeroInstance.weight
+               case 'zero':   result = this.zeroInstance?.weight
                             break
-               case 'one':    result = this.oneInstance.weight
+               case 'one':    result = this.oneInstance?.weight
                             break
-               case 'two':    result = this.twoInstance.weight
+               case 'two':    result = this.twoInstance?.weight
                             break
-               case 'three':  result = this.threeInstance.weight
+               case 'three':  result = this.threeInstance?.weight
                             break
-               case 'four':   result = this.fourInstance.weight
+               case 'four':   result = this.fourInstance?.weight
                             break
-               case 'five':   result = this.fiveInstance.weight
+               case 'five':   result = this.fiveInstance?.weight
                             break
-               case 'six':    result = this.sixInstance.weight
+               case 'six':    result = this.sixInstance?.weight
                             break
-               case 'seven':  result = this.sevenInstance.weight
+               case 'seven':  result = this.sevenInstance?.weight
                             break
-               case 'eight':  result = this.eightInstance.weight
+               case 'eight':  result = this.eightInstance?.weight
                             break
-               case 'nine':   result = this.nineInstance.weight
+               case 'nine':   result = this.nineInstance?.weight
                             break
-               default:     result = -1
+               default:     result = -999999
           }
           return result
     }
