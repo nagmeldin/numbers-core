@@ -39,7 +39,7 @@ class One {
         return Math.abs(this.weight)
     }
     def sine(){
-        return Math.sin(this.weight )
+        return Math.sin(this.weight)
     }
     def cosine(){
         return Math.cos(this.weight )

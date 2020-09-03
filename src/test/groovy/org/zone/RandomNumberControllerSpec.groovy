@@ -28,6 +28,14 @@ class RandomNumberControllerSpec extends Specification {
 //        response.status == HttpStatus.OK
 //    }
 
+    void "test version"() {
+        def randomNumberService = new RandomNumberService()
+        given:
+        def versionNumber = randomNumberService.getCurrentVersion()
+        expect:
+        versionNumber== 1.0
+    }
+
     void "test zero"() {
         given:
         def zeroInstance = new Zero()
@@ -85,8 +93,5 @@ class RandomNumberControllerSpec extends Specification {
        // nineInstance.tan() == -0.45231565944181
        // nineInstance.cosine() == -0.911130261884677
     }
-
-
-
 
 }

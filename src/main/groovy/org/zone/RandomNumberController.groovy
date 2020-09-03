@@ -18,20 +18,20 @@ class RandomNumberController {
     }
     @Get(uri="/ver")
     def getVersion() {
-         return 1.0
+         return randomNumberService?.getCurrentVersion()
     }
     @Get("/sum")
     def getRadomSum() {
-        return randomNumberService.sum()
+        return randomNumberService?.sum()
     }
     @Get("/sum/{number}")
     def getCertainSum(number) {
-        return randomNumberService.sum(number)
+        return randomNumberService?.sum(number)
     }
 
     @Get("/singledigit/{number}")
     def getNumber(number) {
-          return randomNumberService.getSingleDigit(number)
+          return randomNumberService?.getSingleDigit(number)
     }
 
     @Get("/singledigit/{number}/{op}")
@@ -40,6 +40,6 @@ class RandomNumberController {
     }
     @Get("/singledigit/{number}/{op}/{n}")
     def doSingleDigitNumberPlus(number,op,n) {
-        return randomNumberService.operateSingleDigitPlus(number,op,n)
+        return randomNumberService?.operateSingleDigitPlus(number,op,n)
     }
 }

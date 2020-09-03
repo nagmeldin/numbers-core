@@ -16,6 +16,10 @@ class RandomNumberService {
     def eightInstance = new Eight()
     def nineInstance = new Nine()
 
+    def getCurrentVersion(){
+      def version = 1.0
+    }
+
    def sum(){
        def random = new Random().nextInt(1000)
 
@@ -112,7 +116,6 @@ class RandomNumberService {
         }
         return result
     }
-
 
     def operateSingleDigitPlus(number,op,n){
         def nInt = n.toInteger()
