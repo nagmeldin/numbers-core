@@ -39,12 +39,15 @@ class Zero {
         return Math.abs(this.weight)
     }
     def sine(){
-        return this.weight
+        def zeroRad = Math.toRadians(this.weight)
+        return Math.sin(zeroRad)
     }
     def cosine(){
-        return Math.PI/2
+        def zeroRad = Math.toRadians(this.weight)
+        return 1.0
     }
     def tan(){
-        return this.weight
+        def zeroRad = Math.toRadians(this.weight)
+        return Math.tan(zeroRad)
     }
 }

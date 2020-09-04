@@ -45,23 +45,43 @@ class RandomNumberService {
         switch (number){
                case 'zero':   result = this.zeroInstance?.weight
                             break
+               case '0':   result = this.zeroInstance?.weight
+                            break
                case 'one':    result = this.oneInstance?.weight
+                            break
+               case '1':    result = this.oneInstance?.weight
                             break
                case 'two':    result = this.twoInstance?.weight
                             break
+               case '2':    result = this.twoInstance?.weight
+                            break
                case 'three':  result = this.threeInstance?.weight
                             break
+               case '3':  result = this.threeInstance?.weight
+                             break
                case 'four':   result = this.fourInstance?.weight
+                            break
+               case '4':   result = this.fourInstance?.weight
                             break
                case 'five':   result = this.fiveInstance?.weight
                             break
+               case '5':   result = this.fiveInstance?.weight
+                            break
                case 'six':    result = this.sixInstance?.weight
+                            break
+               case '6':    result = this.sixInstance?.weight
                             break
                case 'seven':  result = this.sevenInstance?.weight
                             break
+               case '7':  result = this.sevenInstance?.weight
+                            break
                case 'eight':  result = this.eightInstance?.weight
                             break
+               case '8':  result = this.eightInstance?.weight
+                            break
                case 'nine':   result = this.nineInstance?.weight
+                            break
+               case '9':   result = this.nineInstance?.weight
                             break
                default:     result = -999999
           }
@@ -73,25 +93,45 @@ class RandomNumberService {
         def single
         def result
         switch (number){
-            case 'zero':  single = this.zeroInstance
+            case 'zero' :  single = this.zeroInstance
                 break
-            case 'one':   single = this.oneInstance
+            case '0' :  single = this.zeroInstance
+                break
+            case 'one' :   single = this.oneInstance
+                break
+            case '1' :   single = this.oneInstance
                 break
             case 'two':   single = this.twoInstance
                 break
+            case '2':   single = this.twoInstance
+                break
             case 'three': single = this.threeInstance
+                break
+            case '3': single = this.threeInstance
                 break
             case 'four':  single = this.fourInstance
                 break
+            case '4':  single = this.fourInstance
+                break
             case 'five':  single = this.fiveInstance
+                break
+            case '5':  single = this.fiveInstance
                 break
             case 'six':   single = this.sixInstance
                 break
+            case '6':   single = this.sixInstance
+                break
             case 'seven': single = this.sevenInstance
+                break
+            case '7': single = this.sevenInstance
                 break
             case 'eight': single = this.eightInstance
                 break
+            case '8': single = this.eightInstance
+                break
             case 'nine':  single = this.nineInstance
+                break
+            case '9':  single = this.nineInstance
                 break
             default:  single = null
         }

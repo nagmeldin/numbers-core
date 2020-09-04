@@ -53,7 +53,7 @@ class RandomNumberControllerSpec extends Specification {
         zeroInstance.exp() == 1
         zeroInstance.sine() == 0
         zeroInstance.tan() == 0
-       // zeroInstance.cosine() == 0.999851422228908
+        zeroInstance.cosine() == 1.0
     }
     void "test one"() {
         given:
@@ -70,9 +70,9 @@ class RandomNumberControllerSpec extends Specification {
         oneInstance.inverse() == 1.0
         oneInstance.negative() == -1
         oneInstance.exp() == 2.718281828459045
-        //oneInstance.sine() == 0.017452406437284
-        //oneInstance.tan() == 1.557407724654902
-       // oneInstance.cosine() == 0.54030230586814
+        oneInstance.sine() == 0.01745240643728351
+        oneInstance.tan() == 0.017455064928217585
+        oneInstance.cosine() == 0.9998476951563913
     }
     void "test nine"() {
         given:
@@ -89,9 +89,9 @@ class RandomNumberControllerSpec extends Specification {
         nineInstance.inverse() == 1.0/9.0
         nineInstance.negative() == -9.0
         nineInstance.exp() == 8103.083927575384008
-        //nineInstance.sine() == 0.412118485241757
-       // nineInstance.tan() == -0.45231565944181
-       // nineInstance.cosine() == -0.911130261884677
+        nineInstance.sine() == 0.15643446504023087
+        nineInstance.tan() == 0.15838444032453627
+        nineInstance.cosine() == 0.9876883405951378
     }
 
 }

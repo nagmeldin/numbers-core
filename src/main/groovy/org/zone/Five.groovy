@@ -39,13 +39,16 @@ class Five {
         return Math.abs(this.weight)
     }
     def sine(){
-        return Math.sin(this.weight )
+        def fiveRad = Math.toRadians(this.weight)
+        return Math.sin(fiveRad)
     }
     def cosine(){
-        return Math.cosin(this.weight )
+        def fiveRad = Math.toRadians(this.weight)
+        return Math.cos(fiveRad)
     }
     def tan(){
-        return Math.tan(this.weight )
+        def fiveRad = Math.toRadians(this.weight)
+        return Math.tan(fiveRad)
     }
 
 }

@@ -39,13 +39,16 @@ class Four {
         return Math.abs(this.weight)
     }
     def sine(){
-        return Math.sin(this.weight )
+        def fourRad = Math.toRadians(this.weight)
+        return Math.sin(fourRad)
     }
     def cosine(){
-        return Math.cosin(this.weight )
+        def fourRad = Math.toRadians(this.weight)
+        return Math.cos(fourRad)
     }
     def tan(){
-        return Math.tan(this.weight )
+        def fourRad = Math.toRadians(this.weight)
+        return Math.tan(fourRad)
     }
 
 }

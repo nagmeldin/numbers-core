@@ -39,13 +39,16 @@ class Eight {
         return Math.abs(this.weight)
     }
     def sine(){
-        return Math.sin(this.weight )
+        def eightRad = Math.toRadians(this.weight)
+        return Math.sin(eightRad)
     }
     def cosine(){
-        return Math.cosin(this.weight )
+        def eightRad = Math.toRadians(this.weight)
+        return Math.cos(eightRad)
     }
     def tan(){
-        return Math.tan(this.weight )
+        def eightRad = Math.toRadians(this.weight)
+        return Math.tan(eightRad)
     }
 
 }

@@ -39,13 +39,16 @@ class Two {
         return Math.abs(this.weight)
     }
     def sine(){
-        return Math.sin(this.weight )
+        def twoRad = Math.toRadians(this.weight)
+        return Math.sin(twoRad)
     }
     def cosine(){
-        return Math.cosin(this.weight )
+        def twoRad = Math.toRadians(this.weight)
+        return Math.cos(twoRad)
     }
     def tan(){
-        return Math.tan(this.weight )
+        def twoRad = Math.toRadians(this.weight)
+        return Math.tan(twoRad)
     }
 
 }
