@@ -19,6 +19,17 @@ class RandomNumberService {
     def getCurrentVersion(){
       def version = 1.0
     }
+    def testPrime(number){
+        def numInt = number.toInteger()
+        def isPrime = true
+        for (int i = 2; i < numInt ; i++) {
+            if (numInt % i == 0){
+                isPrme = false
+                break
+            }
+        }
+        return isPrime
+    }
 
    def sum(){
        def random = new Random().nextInt(1000)

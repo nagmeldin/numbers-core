@@ -6,11 +6,11 @@ import javax.inject.Singleton
 class CompositeNumber {
 
     def nums =[ new Nine(), new Eight(), new Seven(), new Six(), new Five(), new Four(), new Three(), new Two(), new One(), new Zero() ]
-    def type
-    def isPrime
     def weight
+    def type
+    def isPrime = testPrime(weight)
 
-    // constructor:
+            // constructor:
     CompositeNumber (def nums) {
          this.nums = nums
          sum = 0
@@ -22,7 +22,6 @@ class CompositeNumber {
             this.type = Math.mod(sum) == 0 ? Parity.EVEN : Parity.ODD
         }
     } // End constructor
-
     def add(n){
         return this.weight+n
     }
@@ -61,5 +60,28 @@ class CompositeNumber {
     }
     def tan(){
         return Math.tan(this.weight)
+    }
+
+    def testType(number){
+        def numInt = number.toInteger()
+        def isType
+            if (numInt % 2 == 0){
+                isType = Parity.EVEN
+            } else{
+                isType = Parity.ODD
+            }
+        return isType
+    }
+
+    def testPrime(number){
+        def numInt = number.toInteger()
+        def isPrime = true
+        for (int i = 2; i < numInt ; i++) {
+            if (numInt % i == 0){
+                isPrme = false
+                break
+            }
+        }
+        return isPrime
     }
 }

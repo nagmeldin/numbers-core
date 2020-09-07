@@ -44,7 +44,7 @@ class Zero {
     }
     def cosine(){
         def zeroRad = Math.toRadians(this.weight)
-        return 1.0
+        return Math.cos(zeroRad)
     }
     def tan(){
         def zeroRad = Math.toRadians(this.weight)
