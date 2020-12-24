@@ -12,3 +12,14 @@ class Application {
         Micronaut.run(Application)
     }
 }
+// build:
+// $ ./gradlew build
+// Test:
+// $ ./gradlew test
+// Run:
+// $ ./gradlew run
+// Checkout at:
+// http://localhost:9191/randomnumber
+// http://localhost:9191/randomnumber/ver
+// http://localhost:9191/randomnumber/sum
+// http://localhost:9191/randomnumber/sum/7

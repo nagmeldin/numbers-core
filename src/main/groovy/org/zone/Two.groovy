@@ -2,6 +2,9 @@ package org.zone
 
 import javax.inject.Singleton
 
+//Author: Nagm eldin
+//Since: July 2002
+
 @Singleton
 class Two {
     def type = Parity.EVEN
