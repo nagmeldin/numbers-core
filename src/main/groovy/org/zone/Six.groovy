@@ -4,7 +4,6 @@ import javax.inject.Singleton
 
 //Author: Nagm eldin
 //Since: July 2002
-
 @Singleton
 class Six {
     def type = Parity.EVEN

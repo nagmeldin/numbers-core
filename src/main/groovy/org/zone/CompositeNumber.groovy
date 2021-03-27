@@ -9,7 +9,6 @@ class CompositeNumber {
     def weight
     def type
     def isPrime = testPrime(weight)
-
             // constructor:
     CompositeNumber (def nums) {
          this.nums = nums
